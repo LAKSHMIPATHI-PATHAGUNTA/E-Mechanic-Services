@@ -56,6 +56,7 @@ const Login = () => {
               <FaRegUser></FaRegUser>
             </div>
           </div>
+          <button>age</button>
           <div className="inputTag">
             <label>Email Address</label>
             <div>
@@ -64,6 +65,11 @@ const Login = () => {
               <MdOutlineMailOutline></MdOutlineMailOutline>
             </div>
           </div>
+          <div> className="inputTag"
+            <lable>age</lable>
+          </div>
+            <input type = "test" value={age} onchange={(e)=>setpassWord(e.target.value)}
+            placeholder="age"/> 
           <div className="inputTag">
             <label>Password</label>
             <div>
@@ -72,6 +78,7 @@ const Login = () => {
               <RiLock2Fill></RiLock2Fill>
             </div>
           </div>
+
           <button type="submit">Login</button>
           <Link to={'/register'}>New User</Link>
         </form>
